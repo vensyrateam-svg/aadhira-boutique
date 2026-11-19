@@ -1283,3 +1283,25 @@ body {
     }
 }
 
+
+/* AADHIRA - Prevent Hero Image Cropping */
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 560px;
+    object-fit: contain;
+    object-position: center top;
+}
+
+/* Mobile image adjustment */
+
+@media (max-width: 800px) {
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+}
